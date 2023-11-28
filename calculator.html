@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Calculator</title>
     <link rel="stylesheet" href="./calculator.css">
 </head>
@@ -15,8 +16,8 @@
                     <input type="text" name="display" id="display">
                 </div>
                 <div>
-                    <input type="button" value="AC" onclick="display.value = '' " class="functions">
-                    <input type="button" value="clr" onclick="display.value = display.value.toString().slice(0,-1)" class="functions">
+                    <input type="button" value="C" onclick="display.value = '' " class="functions">
+                    <input type="button" value="backspace" class="material-icons" onclick="display.value = display.value.toString().slice(0,-1)" class="functions">
                     <input type="button" value="%" onclick="document.getElementById('display').value = parseFloat(document.getElementById('display').value) / 100" class="operators">
                     <input type="button" value="/" onclick="display.value += '/' " class="operators">
                 </div>
